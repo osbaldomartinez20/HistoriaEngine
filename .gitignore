@@ -13,3 +13,9 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+#Folders
+/application/characters/characters.json
+/application/dialogue/dialogue.json
+/application/dialogue/choice.json
+/application/save/saveFile.json
