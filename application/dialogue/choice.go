@@ -7,13 +7,14 @@ import (
 
 //Choice cotains a choice correspondong to a dialogue id
 type Choice struct {
-	ChoiceID int         `json:"ChoiceID"`
-	DialogueID int       `json:"DialogueID"`
-	Choice string        `json:"Choice"`
+	ChoiceID int               `json:"ChoiceID"`
+	DialogueID int             `json:"DialogueID"`
+	NextDialogueID int         `json:"NextDialogueID"`
+	Choice string              `json:"Choice"`
 }
 
-//ChoiceWrite stores the choice in a JSON
-func ChoiceWrite(choice Choice) error {
+//WriteChoice stores the choice in a JSON
+func WriteChoice(choice Choice) error {
 	filename := "./dialogue/choice.json"
 	var choices []Choice
 
